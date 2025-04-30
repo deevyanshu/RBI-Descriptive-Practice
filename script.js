@@ -10,6 +10,46 @@ var maxWords = 600;
 var time=15;
 var val="largeMarker";
 let interval;
+const openPyq = document.getElementById("open-popup");
+const popup = document.getElementById("my-popup");
+const closeBtn = document.getElementById("close-button");
+const ques=document.getElementById('pop-quest');
+
+        openPyq.addEventListener("click", () => {
+            popup.style.display = "flex";
+        });
+
+        function close(){
+            popup.style.display = "none";
+        }
+
+        window.addEventListener('click', (event) => {
+            if (event.target === popup) {
+                popup.style.display = "none";
+                document.body.style.overflow = ''; // Restore background scroll
+            }
+        });
+
+        closeBtn.addEventListener("click", close);
+
+        ques.addEventListener('click', (event) => {
+            if(event.target.className==="popup-question es"){
+                essay();
+                let question=event.target.textContent.slice(9);
+                questionTextarea.value=question;
+                close();
+            }else if(event.target.className==="popup-question lm"){
+                largeMarker();
+                let question=event.target.textContent.slice(12);
+                questionTextarea.value=question;
+                close();
+            }else if(event.target.className==="popup-question sm"){
+                smallMarker();
+                let question=event.target.textContent.slice(12);
+                questionTextarea.value=question;
+                close();
+            }
+        })
 
         function essay(){
             maxWords=600;
