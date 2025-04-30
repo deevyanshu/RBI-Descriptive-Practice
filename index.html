@@ -16,7 +16,10 @@
         <button onclick="essay()">Essay</button>
         <button onclick="largeMarker()">15 Marker</button>
         <button onclick="smallMarker()">10 Marker</button>
+        <button onclick="smallMarker()" id="open-popup">PYQs</button>
     </div>
+
+    
 
     <div class="timer-container mt">
         <span class="timer-heading">Timer</span>
@@ -34,6 +37,124 @@
             <label for="answer" id="answer-label">Answer:</label>
             <textarea id="answer" placeholder="Start typing your answer..."></textarea>
             <div class="word-count">Words Left: <span id="wordCount">600</span></div>
+        </div>
+    </div>
+
+    <div id="my-popup" class="popup">
+        <div class="popup-content" id="pop-quest">
+            <div class="popup-header">Click on the question to write the answer</div>
+            <div class="popup-subject">Year: 2024</div>
+
+            <div class="popup-subject">Essay</div>
+            <div class="popup-marker">40 Marker:-</div>
+            <div class="popup-question es">Essay-1: Discuss what would be the social, economic and environmental impacts of hosting Olympics for India.</div>
+            <div class="popup-question es" >Essay-2: How Climate change impacts global migration. Discuss impacts on countries from which people emigrate and on countries to which they immigrate to.</div>
+            <div class="popup-question es" >Essay-3: Importance of mental health of employees in an organisation. What steps can organisations take to ensure wellbeing of employees.</div>
+            <div class="popup-question es" >Essay-4: “Anyone who stops learning is old, whether at twenty or eighty. Anyone who keeps learning stays young. The greatest thing in life is to keep your mind young.”- ‘Henry Ford’. Elaborate.</div>
+            <hr style="border-top: dotted 5px; color: rgb(9, 189, 189);" />
+
+            <div class="popup-subject">Subject: ESI</div>
+            <div class="popup-marker" >15 Marker:-</div>
+            <div class="popup-question lm" >Question-1: Discuss the challenges of youth employment in India and suggest possible solutions.</div>
+            <div class="popup-question lm" >Question-2: Answer the following questions-
+                <br>A. Discuss the Five key digital initiatives introduced in the Union Budget and their potential impact on India's digital economy (7.5 Marks)
+                 <br>B. Explain the transformational journey of the Digital India initiative (7.5 Marks)</div>
+            <div class="popup-question lm" >Question-3: Explain the inherent conflict between sustainable development and economic growth, focusing on the challenges posed by pursuing both simultaneously?</div>
+            
+            <div class="popup-marker">10 Marker:-</div>
+            <div class="popup-question sm" >Question-1: Rural India needs to give priority to women-led development. Discuss.</div>
+            <div class="popup-question sm" >Question-2: Explain the objectives and significance of the National Industrial Corridor Development Programme in boosting India's industrial growth and infrastructure development?</div>
+            <div class="popup-question sm" >Question-3: Examine the pros and cons of implementing Artificial Intelligence (AI) in the banking sector?</div>
+            <hr style="border-top: dotted 5px; color: rgb(9, 189, 189);" />
+
+            <div class="popup-subject">Subject: Finance and Management</div>
+            <div class="popup-marker">15 Marker:-</div>
+            <div class="popup-question lm">Question-1: What are derivatives? Discuss the different types of derivatives, the key market participants, their significance in financial markets, and the risks associated with them.</div>
+            <div class="popup-question lm">Question-2: What is a channel of communication? Briefly explain the different types of communication channels and their importance in an organization.</div>
+            <div class="popup-question lm">Question-3: What is the difference between trait theories and behaviours theories of leadership?</div>
+            
+            <div class="popup-marker">10 Marker:-</div>
+            <div class="popup-question sm">Question-1: What are the key factors that influence ethics in business?</div>
+            <div class="popup-question sm">Question-2: What is Additional Tier 1 (AT1) bonds? Discuss their unique features and explain how they differ from other types of bonds?</div>
+            <div class="popup-question sm">Question-3: What is the difference between value investing and growth investing?</div>
+            <hr style="border:none; height: 7px; color: rgb(102, 5, 141); background-color: rgb(102, 5, 141);" />
+
+            <div class="popup-subject">Year: 2023</div>
+
+            <div class="popup-subject">Essay</div>
+            <div class="popup-marker">40 Marker:-</div>
+            <div class="popup-question es">Essay-1: In every organization, especially in modern day and age, employees focus on personal value and purpose in the organization. Suggest measures for organization culture in this regard</div>
+            <div class="popup-question es">Essay-2: what is social media recruitment? What are its advantages and disadvantages</div>
+            <div class="popup-question es">Essay-3: Economic impacts of climate change on developing countries</div>
+            <div class="popup-question es">Essay-4: There is an immense need of multi linguistic social media accounts for businesses</div>
+            <hr style="border-top: dotted 5px; color: rgb(9, 189, 189);" />
+
+            <div class="popup-subject">Subject: ESI</div>
+            <div class="popup-marker">15 Marker:-</div>
+            <div class="popup-question lm">Question-1: In the light of RBI’s report on currency and finance FY 2022-23, explain
+                <br>• Macroeconomic effect of climate change
+                <br>• 3 landmark global collaborations on climate change
+                </div>
+            <div class="popup-question lm">Question-2: World bank has released its World Development Report 2023: Migrants, Refugees and Societies. Discuss key recommendations for the countries given in the report.</div>
+            <div class="popup-question lm">Question-3: UNDP’s new strategy for Gender Equality was mentioned in UNDP’s report. Taking reference of this report, how can we introduce gender sensitization in the fabric of Indian economy</div>
+            
+            <div class="popup-marker">10 Marker:-</div>
+            <div class="popup-question sm">Question-1: Explain any 3 schemes of the government of India working towards employment generation and poverty alleviation.</div>
+            <div class="popup-question sm">Question-2: What are the Direct and indirect monetary policy measures and briefly explain at least 8 of them.</div>
+            <div class="popup-question sm">Question-3: What are the various challenges faced by start-ups in tier 2 and tier 3 cities?</div>
+            <hr style="border-top: dotted 5px; color: rgb(9, 189, 189);" />
+
+            <div class="popup-subject">Subject: Finance and Management</div>
+            <div class="popup-marker">15 Marker:-</div>
+            <div class="popup-question lm">Question-1: Explain in detail, RBI’s Retail Direct Scheme including the scope, applicability, charges, fees, etc.</div>
+            <div class="popup-question lm">Question-2: Explain the Big 5 Personality Model of Personality. Also, explain how other traits of personality affect organisational behaviour</div>
+            <div class="popup-question lm">Question-3: What was Henri Fayol’s contribution to management? Also, explained his 14 principles of management.</div>
+            
+            <div class="popup-marker">10 Marker:-</div>
+            <div class="popup-question sm">Question-1: What is a code of conduct? How is it implemented in the organisation?</div>
+            <div class="popup-question sm">Question-2: Describe ONDC. How it will impact companies like Flipkart, Amazon, Walmart etc.</div>
+            <div class="popup-question sm">Question-3: What are pre-sanctioned credit lines at banks through the UPI? How is it going to help in furthering financial inclusion?</div>
+            <hr style="border:none; height: 7px; color: rgb(102, 5, 141); background-color: rgb(102, 5, 141);" />
+
+            <div class="popup-subject">Year: 2022</div>
+
+            <div class="popup-subject">Essay</div>
+            <div class="popup-marker">40 Marker:-</div>
+            <div class="popup-question es">Essay-1: “Peace cannot be kept by force, it can only be achieved by understanding” – Elaborate.</div>
+            <div class="popup-question es">Essay-2: Role of female entrepreneurs in India</div>
+            <div class="popup-question es">Essay-3: Advantages and disadvantages of renewable energy. How the OSOWOG initiative will help in eliminating these disadvantages.</div>
+            <div class="popup-question es">Essay-4: India has become a medical destination for the world</div>
+            <hr style="border-top: dotted 5px; color: rgb(9, 189, 189);" />
+
+            <div class="popup-subject">Subject: ESI</div>
+            <div class="popup-marker">15 Marker:-</div>
+            <div class="popup-question lm">Question-1: Despite spread of urbanization in villages, challenges such as race, caste, gender discrimination still persist. In this context, what are the challenges faced by
+                protective discriminatory policy?
+                </div>
+            <div class="popup-question lm">Question-2: What is meant by economic reforms? Discuss the Economic reforms in India from 1990s till date.</div>
+            <div class="popup-question lm">Question-3: “Financial stability is essential to any financial institution/business.” Discuss in the light of financial stability report of RBI and economic reforms in view of COVID outbreak in India.</div>
+            
+            <div class="popup-marker">10 Marker:-</div>
+            <div class="popup-question sm">Question-1: What are the challenges associated with rural entrepreneurship? How young enterprises can solve these problems?</div>
+            <div class="popup-question sm">Question-2: Write a short note on current monetary policy framework in India.</div>
+            <div class="popup-question sm">Question-3: What is NBFC? How is it different from banks? What are the five types of NBFCs registered with RBI?</div>
+            <hr style="border-top: dotted 5px; color: rgb(9, 189, 189);" />
+
+            <div class="popup-subject">Subject: Finance and Management</div>
+            <div class="popup-marker">15 Marker:-</div>
+            <div class="popup-question lm">Question-1: Explain in detail, RBI’s Retail Direct Scheme including the scope, applicability, charges, fees, etc.</div>
+            <div class="popup-question lm">Question-2: Explain the Big 5 Personality Model of Personality. Also, explain how other traits of personality affect organisational behaviour</div>
+            <div class="popup-question lm">Question-3: What was Henri Fayol’s contribution to management? Also, explained his 14 principles of management.</div>
+            
+            <div class="popup-marker">10 Marker:-</div>
+            <div class="popup-question sm">Question-1: What is a code of conduct? How is it implemented in the organisation?</div>
+            <div class="popup-question sm">Question-2: Describe ONDC. How it will impact companies like Flipkart, Amazon, Walmart etc.</div>
+            <div class="popup-question sm">Question-3: What are pre-sanctioned credit lines at banks through the UPI? How is it going to help in furthering financial inclusion?</div>
+            <hr style="border:none; height: 7px; color: rgb(102, 5, 141); background-color: rgb(102, 5, 141);" />
+
+            <div class="popup-close">
+                <button id="close-button" class="close-button" onclick="close()">Close</button>
+            </div>
         </div>
     </div>
 
